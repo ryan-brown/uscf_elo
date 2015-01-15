@@ -2,7 +2,7 @@
 #include <math.h>
 
 double effective_games(double r, int n) {
-	
+
 	double e_games = 50/sqrt(0.662+0.00000739*pow((2569-r),2));
 
 	if(n < e_games) {
@@ -40,7 +40,7 @@ double bonus_rating_change(double rating_change, int m) {
 		m = 4;
 	}
 
-	double bonus = rating_change - 10*sqrt(m);
+    double bonus = rating_change - 10*sqrt(m);
 
 	if(bonus < 0) {
 		return 0;

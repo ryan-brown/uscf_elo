@@ -8,25 +8,23 @@ int main() {
 	double s;
 
 	printf("Current Rating: ");
-   	scanf("%lf", &r);
+	scanf("%lf", &r);
 
-   	printf("Total Rated Games Played: ");
-   	scanf("%d", &n);
+	printf("Total Rated Games Played: ");
+	scanf("%d", &n);
 
-   	printf("Total Score: ");
-   	scanf("%lf", &s);
+	printf("Total Score: ");
+	scanf("%lf", &s);
 
-   	printf("Games at Event: ");
-   	scanf("%d", &m);
+	printf("Games at Event: ");
+	scanf("%d", &m);
 
-   	double opponents[m];
+	double opponents[m];
 
-   	for(int i = 0; i < m; i++) {
-   		printf("Opponent #%d Rating: ", i+1);
-   		scanf("%lf", &opponents[i]);
-   	}
-
-	//double opponents[] = {1430, 1424, 1451, 1502, 1488};
+	for(int i = 0; i < m; i++) {
+		printf("Opponent #%d Rating: ", i+1);
+		scanf("%lf", &opponents[i]);
+	}
 
 	double e_games = effective_games(r, n);
 	double e = expected_score(r, opponents, m);
@@ -36,7 +34,7 @@ int main() {
 
 	printf("--------------------\n");
 
-	printf("K Factor: %lg\n", k);
+    printf("K Factor: %lg\n", k);
 	printf("Expected Score: %lg\n", e);
 
 	char sign = r_change >= 0 ? '+' : '\0';
