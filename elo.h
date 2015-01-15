@@ -1,8 +1,8 @@
 /* 
  * Calculate effective number of games for a player
  *
- * r:	Current rating
- * n:	Total rated games played
+ * r:   Current rating
+ * n:   Total rated games played
  */
 double effective_games(double r, int n);
 
@@ -43,7 +43,7 @@ double rating_change(double k, double s, double e);
 /* 
  * Calculate the bonus rating change of a player
  *
- * rating_change:	K factor
+ * rating_change:   K factor
  * m:               Games in Event (equivalent to size of opponents array)
  */
 double bonus_rating_change(double rating_change, int m);
@@ -55,4 +55,3 @@ double bonus_rating_change(double rating_change, int m);
  * m:               Games in Event (equivalent to size of opponents array)
  */
 double total_rating_change(double k, double s, double e, int m);
-
