@@ -44,7 +44,7 @@ double rating_change(double k, double s, double e);
  * Calculate the bonus rating change of a player
  *
  * rating_change:	K factor
- * m:				Games in Event (equivalent to size of opponents array)
+ * m:               Games in Event (equivalent to size of opponents array)
  */
 double bonus_rating_change(double rating_change, int m);
 

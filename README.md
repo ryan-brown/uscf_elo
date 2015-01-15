@@ -1,1 +1,1 @@
-# uscf_elo
+gcc -std=c99 -o elo main.c elo.c
